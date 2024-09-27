@@ -23,3 +23,5 @@ def get_current_weather(city):
         print(f"Weather: {weather['description']}")
     else:
         print("City not found or an error occurred.")
+
+        
