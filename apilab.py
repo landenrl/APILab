@@ -29,7 +29,7 @@ def get_weather_forecast(city):
     response = requests.get(forecast_url)
     if response.status_code == 200:
         data = response.json()
-        print(f"Forecast for {data['city]']['name']}:")
+        print(f"Forecast for {data['city']['name']}:")
         for entry in data['list']:
             print(f"Date/Time: {entry['dt_txt']}")
             print(f"Temperature: {entry['main']['temp']} degrees Celsius")
